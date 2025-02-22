@@ -18,6 +18,9 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .left{
@@ -81,12 +84,14 @@ body{
 
 .aside{
     position: absolute;
-    width: 250px;
 }
 
 .aside-navbar{
+    margin-top: 70px;
     background-color: #000;
     padding: 0 30px;
+    position: fixed;
+    width: 250px;
 }
 
 .top, .mid, .bottom{
