@@ -77,37 +77,30 @@ body{
     border-radius: 100%;
 }
 
-.page{
-    width: 100dvw;
-    height: 100dvh;
-}
-
 /*Aside*/
 
 .aside{
-    height: 100%;
-    width: 300px;
     position: absolute;
+    width: 250px;
 }
 
 .aside-navbar{
-    height: 100%;
     background-color: #000;
     padding: 0 30px;
 }
 
-.top, .bottom{
+.top, .mid, .bottom{
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid #555;
 }
 
-.bottom h2{
+.mid h2{
     color: #fff;
     margin-left: 10px;
 }
 
-.top a, .bottom a{
+.top a, .mid a, .bottom a{
     color: #fff;
     text-decoration: none;
     margin-bottom: 20px;
@@ -116,7 +109,7 @@ body{
     padding: 10px;
 }
 
-.top a:hover, .bottom a:hover{
+.top a:hover, .mid a:hover, .bottom a:hover{
     background-color: #555;
 }
 
@@ -140,4 +133,7 @@ body{
         background-color: #555;
     }
 
+    .bottom{
+        display: none;
+    }
 }
