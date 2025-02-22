@@ -9,8 +9,8 @@
 </head>
 <body>
 
-    <header class="desktop-header">
-        <nav class="desktop-navbar">
+    <header class="header">
+        <nav class="navbar">
             <div class="left">
                 <i class="fa-solid fa-bars bars"></i>
                 <div class="navbar-item logo">
@@ -38,6 +38,42 @@
         </nav>
     </header>
 
+    <div class="page">
+        <aside class="dismiss aside">
+            <nav class="aside-navbar">
+                <div class="top">
+                    <a href="./index.html">Inicio</a>
+                    <a href="">Mi Lista</a>
+                </div>
+                <div class="bottom">
+                    <h2>Categorías</h2>
+                    <a href="">Proteínas</a>
+                    <a href="">Creatina</a>
+                    <a href="">Pre Entreno</a>
+                    <a href="">Vitaminas</a>
+                    <a href="">BCAA</a>
+                </div>
+            </nav>
+        </aside>
+
+        <div class="content">
+            
+        </div>
+    </div>
+    
+
+
+    <script>
+        const menuAction = document.querySelector(".bars");
+        menuAction.addEventListener("click",()=>{
+            const aside = document.querySelector(".aside");
+            if (!aside.classList.contains("dismiss")){
+                aside.classList.add("dismiss");
+            } else {
+                aside.classList.remove("dismiss");
+            }
+        })
+    </script>
 
 </body>
 </html>
