@@ -110,35 +110,35 @@
         })
 
         const sections = document.querySelectorAll('.section-content');
-    let currentIndex = 0;
+        let currentIndex = 0;
 
-    window.addEventListener('scroll', () => {
-        const scrollPosition = window.scrollY;
-        const windowHeight = window.innerHeight;
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
 
-        sections.forEach((section, index) => {
-        const sectionTop = section.offsetTop;
-        if (scrollPosition >= sectionTop - windowHeight / 2) {
-            currentIndex = index;
-        }
+            sections.forEach((section, index) => {
+            const sectionTop = section.offsetTop;
+            if (scrollPosition >= sectionTop - windowHeight / 2) {
+                currentIndex = index;
+            }
+            });
+
+            sections.forEach((section, index) => {
+            if (index === currentIndex) {
+                section.style.opacity = '1';
+                section.style.transform = 'translateY(0)';
+            } else {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(50px)';
+            }
+            });
         });
 
         sections.forEach((section, index) => {
-        if (index === currentIndex) {
-            section.style.opacity = '1';
-            section.style.transform = 'translateY(0)';
-        } else {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(50px)';
-        }
+            section.style.transition = 'opacity 0.5s, transform 0.5s';
+            section.style.opacity = index === 0 ? '1' : '0';
+            section.style.transform = index === 0 ? 'translateY(0)' : 'translateY(50px)';
         });
-    });
-
-    sections.forEach((section, index) => {
-        section.style.transition = 'opacity 0.5s, transform 0.5s';
-        section.style.opacity = index === 0 ? '1' : '0';
-        section.style.transform = index === 0 ? 'translateY(0)' : 'translateY(50px)';
-    });
 
     </script>
 
