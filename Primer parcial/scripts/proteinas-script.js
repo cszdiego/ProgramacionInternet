@@ -16,7 +16,6 @@ proteinas.forEach((product)=>{
                         <div class="buy-links">
                             <a href="${product.amzLink}" target="_blank"><img src="./Imagenes/amz-logo.png" alt="amzLink"></a>
                             <a href="${product.gncLink}" target="_blank"><img src="./Imagenes/GNC-Logo.png" alt="gncLink" ></a>
-                            <a href="${product.supLink}" target="_blank"><img src="./Imagenes/sup-logopng.png" alt="supLink" ></a>
                         </div>
                     </div>
                     <p class="avg-price">Precio promedio <span class="price">$${product.precio}</span></p>

@@ -125,7 +125,9 @@
     text-decoration: none;
 }
 
-
+.grid-item:hover{
+    opacity: 85%;
+}
 
 .grid-item h2{
     margin: auto;
