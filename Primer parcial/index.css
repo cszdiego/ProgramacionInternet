@@ -92,7 +92,7 @@ body{
     padding: 0 30px;
     position: fixed;
     z-index: 10;
-    width: 250px;
+    width: 100%;
 }
 
 .top, .mid, .bottom{
@@ -126,7 +126,7 @@ body{
 /*Desktop Header*/
 @media screen and (min-width:820px) {
     .right{
-        width: 400px;
+        width: 300px;
     }
 
     .link{
@@ -141,5 +141,9 @@ body{
 
     .bottom{
         display: none;
+    }
+
+    .aside-navbar{
+        width: 250px;
     }
 }
