@@ -19,7 +19,6 @@ proteinas.forEach((product)=>{
                         </div>
                     </div>
                     <p class="avg-price">Precio promedio <span class="price">$${product.precio}</span></p>
-                    <button class="add">Agregar a tu lista</button>
                 </div>
             
             </div>`

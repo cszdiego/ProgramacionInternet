@@ -1,8 +1,8 @@
-import { creatinas } from "../productsData/creatinas.js";
+import { bcaas } from "../productsData/bcaa.js";
 
 let html = '';
 
-creatinas.forEach((product)=>{
+bcaas.forEach((product)=>{
     const webHtml = `<div class="content-item">
                 <img src="${product.image}" alt="creatine-img">
                 <div class="description">
